@@ -30,12 +30,6 @@ pip install .
 pip install -U .  # or --upgrade
 ```
 
-## Install (for developer)
-
-```sh
-pip install -e '.[dev]'
-```
-
 ## Import this library
 
 (Python)
@@ -51,18 +45,6 @@ print(python_boilerplate.add(1, 1))  # => 2
 python-boilerplate 1 1
 ```
 
-## Test
-
-```sh
-pytest
-```
-
-## Test against multiple environments
-
-```sh
-tox
-```
-
 ## Create a source distribution
 
 ```sh
@@ -74,4 +56,46 @@ python setup.py sdist
 ```sh
 pip install wheel
 python setup.py bdist_wheel
+```
+
+## Install (for developer)
+
+```sh
+env PIPENV_VENV_IN_PROJECT=true pipenv install -d
+```
+
+## Test
+
+```sh
+pipenv run pytest
+```
+
+## Test against multiple environments
+
+```sh
+pipenv run tox
+```
+
+## Lint
+
+```sh
+pipenv run vet
+```
+
+## Reformat source code
+
+```sh
+pipenv run fmt
+```
+
+## Generate documents
+
+```sh
+pipenv run doc
+```
+
+## Create a wheel package (for developer)
+
+```sh
+pipenv run build
 ```

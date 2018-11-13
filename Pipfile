@@ -1,0 +1,26 @@
+[[source]]
+url = "https://pypi.org/simple"
+name = "pypi"
+verify_ssl = true
+
+[requires]
+# python_version = "3.4"
+
+[packages]
+
+[dev-packages]
+python-boilerplate = {path = ".", editable = true}
+pytest = ">=3"
+coverage = "*"
+tox = "*"
+sphinx = "*"
+mypy = "*"
+"flake8" = "*"
+"autopep8" = "*"
+isort = "*"
+
+[scripts]
+vet = "python setup.py vet"
+fmt = "python setup.py fmt"
+doc = "python setup.py doc"
+build = "python setup.py bdist_wheel"

@@ -1,4 +1,4 @@
-def main():
+def main() -> None:
     import sys
     from .core import add
     if len(sys.argv) == 3:
