@@ -1,6 +1,7 @@
 # python-boilerplate
 
 * [Pythonのパッケージングのベストプラクティスについて考える2018](https://techblog.asahi-net.co.jp/entry/2018/06/15/162951)
+* [2019年に向けてPythonのモダンな開発環境について考える](https://techblog.asahi-net.co.jp/entry/2018/11/19/103455)
 
 Please rename this package:
 
