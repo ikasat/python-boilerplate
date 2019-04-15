@@ -62,7 +62,7 @@ python setup.py bdist_wheel
 ## Install (for developer)
 
 ```sh
-env PIPENV_VENV_IN_PROJECT=true pipenv install -d
+PIPENV_VENV_IN_PROJECT=true pipenv install -d
 ```
 
 ## Test
